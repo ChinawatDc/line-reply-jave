@@ -1,0 +1,15 @@
+{
+    "version": 2,
+    "builds": [
+        {
+            "src": "build.gradle",
+            "use": "@vercel/java"
+        }
+    ],
+    "routes": [
+        {
+            "src": "/reply",
+            "dest": "/build/reply"
+        }
+    ]
+}
