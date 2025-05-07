@@ -13,7 +13,7 @@ public class WebhookController {
     private static final Logger logger = LoggerFactory.getLogger(WebhookController.class);
 
     @PostMapping("/reply")
-    public ResponseEntity<?> reply(@RequestBody WebhookRequest webhookRequest) {
+public ResponseEntity<?> reply(@RequestBody String body) {
         logger.info("Received data: {}", webhookRequest);
 
         // ตรวจสอบว่ามีข้อมูล groupId และ replyToken หรือไม่
